@@ -1,25 +1,25 @@
-if SHIELD_CORNE_LEFT || SHIELD_CORNE_DONGLE_XIAO || SHIELD_CORNE_DONGLE_PRO_MICRO
+# Corne behavior when building the LEFT half
+if SHIELD_CORNE_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "Corne"
 
+# Left half is the central/master device
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-# if SHIELD_CORNE_DONGLE_XIAO || SHIELD_CORNE_DONGLE_PRO_MICRO
-
-# config ZMK_USB
-#     default y
-
-# endif
-
 endif
 
-if SHIELD_CORNE_LEFT || SHIELD_CORNE_RIGHT || SHIELD_CORNE_LEFT_PERIPHERAL || SHIELD_CORNE_DONGLE_XIAO || SHIELD_CORNE_DONGLE_PRO_MICRO
 
+# Shared behavior for all Corne halves (left or right)
+if SHIELD_CORNE_LEFT || SHIELD_CORNE_RIGHT || SHIELD_CORNE_LEFT_PERIPHERAL
+
+# Enable split communication
 config ZMK_SPLIT
     default y
 
+
+# Display (OLED) support for boards that have screens
 if ZMK_DISPLAY
 
 config I2C
@@ -28,16 +28,10 @@ config I2C
 config SSD1306
     default y
 
-if SHIELD_CORNE_DONGLE_XIAO || SHIELD_CORNE_DONGLE_PRO_MICRO
-
-choice ZMK_DISPLAY_WORK_QUEUE
-    default ZMK_DISPLAY_WORK_QUEUE_DEDICATED
-endchoice
-
-endif
-
 endif # ZMK_DISPLAY
 
+
+# LVGL block (only relevant if using nice!view or e-paper display)
 if LVGL
 
 config LV_Z_VDB_SIZE
@@ -56,3 +50,4 @@ endchoice
 endif # LVGL
 
 endif
+
