@@ -12,18 +12,18 @@ layers:
   - I
   - O
   - P
-  - $$mdi:backspace-outline$$
+  - {t: BACKSPACE, h: Ctl+⌫}
   - $$mdi:apple-keyboard-control$$
-  - A
-  - S
-  - D
-  - F
+  - {t: A, h: LEFT GUI}
+  - {t: S, h: LEFT ALT}
+  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - H
-  - J
-  - K
-  - L
-  - ;
+  - {t: J, h: RSHIFT}
+  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: L, h: RIGHT ALT}
+  - {t: ;, h: '$$mdi:apple-keyboard-command$$'}
   - ''''
   - $$mdi:apple-keyboard-shift$$
   - Z
@@ -38,11 +38,11 @@ layers:
   - /
   - Esc
   - $$mdi:apple-keyboard-option$$
-  - RAI
-  - {t: ENTER, h: LEFT SHIFT}
-  - {t: ␣, h: RIGHT SHIFT}
-  - LOW
-  - $$mdi:backspace-outline$$
+  - {t: BACKSPACE, h: RAI}
+  - {t: ENTER, h: RAI}
+  - {t: ␣, h: LOW}
+  - {t: ENTER, h: LOW}
+  - {t: '$$mdi:led-on$$', h: '$$mdi:toggle-switch$$', s: '$$mdi:led-outline$$', type: toggle}
   LOW:
   - ↹
   - '1'
@@ -66,7 +66,7 @@ layers:
   - ↓
   - ↑
   - →
-  - {t: ▽, type: trans}
+  - /
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
@@ -80,11 +80,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-command$$
+  - LEFT ALT
   - {t: ▽, type: trans}
-  - ␣
-  - ⏎
-  - {type: held}
+  - ENTER
+  - {t: ␣, type: held}
+  - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-option$$
   RAI:
   - ↹
@@ -125,7 +125,7 @@ layers:
   - '~'
   - $$mdi:apple-keyboard-command$$
   - {t: '&studio_unlock', type: held}
+  - ENTER
   - ␣
-  - ⏎
   - '&studio_unlock'
   - $$mdi:apple-keyboard-option$$
