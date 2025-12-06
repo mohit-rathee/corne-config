@@ -108,7 +108,7 @@
 &kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6     &kp N7    &kp N8    &kp N9     &kp N0     &kp BSPC
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT  &kp SLASH  &trans
 &kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans     &trans    &trans    &trans     &trans     &trans
-                                        &kp LEFT_ALT  &trans        &kp ENTER       &kp SPACE  &trans    &kp RALT
+                                        &kp LEFT_ALT  &mo 3         &kp ENTER       &kp SPACE  &trans    &kp RALT
             >;
         };
 
@@ -122,10 +122,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR        &kp PRCNT    &kp CARET  &kp AMPS        &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans    &trans  &trans    &trans          &trans       &kp MINUS  &kp EQUAL       &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans          &trans       &kp UNDER  &kp PLUS        &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI  &studio_unlock  &kp ENTER    &kp SPACE  &studio_unlock  &kp RALT
+&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR        &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
+&kp LCTRL  &trans    &trans  &trans    &trans          &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
+&kp LSHFT  &trans    &trans  &trans    &trans          &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
+                             &kp LGUI  &studio_unlock  &kp ENTER    &kp SPACE  &mo 3      &kp RALT
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &bootloader    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans         &trans  &trans  &trans
             >;
         };
     };
