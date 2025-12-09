@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   BAS:
-  - TAB
+  - ↹
   - Q
   - W
   - E
@@ -12,20 +12,20 @@ layers:
   - I
   - O
   - P
-  - {t: BACKSPACE, h: Ctl+BSPC}
-  - LCTRL
+  - {t: BACKSPACE, h: Ctl+⌫}
+  - $$mdi:apple-keyboard-control$$
   - {t: A, h: LEFT GUI}
   - {t: S, h: LEFT ALT}
-  - {t: D, h: LCTRL}
-  - {t: F, h: LSHFT}
+  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - H
   - {t: J, h: RSHIFT}
-  - {t: K, h: RCTRL}
+  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: RIGHT ALT}
-  - {t: ;, h: RGUI}
+  - {t: ;, h: '$$mdi:apple-keyboard-command$$'}
   - ''''
-  - LSHFT
+  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
@@ -36,15 +36,15 @@ layers:
   - ','
   - .
   - /
-  - ESC
+  - Esc
   - {t: LEFT ALT, h: '3'}
   - {t: BACKSPACE, h: RAI}
   - LEFT SHIFT
   - {t: ENTER, h: LOW}
-  - {t: SPACE, h: LOW}
+  - {t: ␣, h: LOW}
   - ':'
   LOW:
-  - TAB
+  - ↹
   - '1'
   - '2'
   - '3'
@@ -55,20 +55,20 @@ layers:
   - '8'
   - '9'
   - '0'
-  - BSPC
+  - $$mdi:backspace-outline$$
   - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT 5
+  - ←
+  - ↓
+  - ↑
+  - →
   - /
   - {t: ▽, type: trans}
-  - LSHFT
+  - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -85,21 +85,21 @@ layers:
   - ENTER
   - {t: ENTER, type: held}
   - {t: ▽, type: trans}
-  - RALT
+  - $$mdi:apple-keyboard-option$$
   RAI:
-  - TAB
+  - ↹
   - '!'
   - '@'
   - '#'
   - $
   - '%'
   - ^
-  - '&'
+  - AMPS
   - KP MULTIPLY
   - (
   - )
-  - BSPC
-  - LCTRL
+  - $$mdi:backspace-outline$$
+  - $$mdi:apple-keyboard-control$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -111,7 +111,7 @@ layers:
   - ']'
   - \
   - '`'
-  - LSHFT
+  - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -123,12 +123,12 @@ layers:
   - '}'
   - '|'
   - '~'
-  - LGUI
+  - $$mdi:apple-keyboard-command$$
   - {t: '&studio_unlock', type: held}
   - ENTER
-  - SPACE
+  - ␣
   - '3'
-  - RALT
+  - $$mdi:apple-keyboard-option$$
   '3':
   - {t: ▽, type: trans}
   - Alt+1
@@ -165,7 +165,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&bootloader'
+  - Boot
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
