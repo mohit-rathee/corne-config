@@ -9,7 +9,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/rgb.h>
 
 &led_strip { chain-length = <27>; };
 
@@ -88,10 +87,10 @@
             //                    | ALT | LWR | SPC |   | ENT | RSE  | BKSP|
 
             bindings = <
-&kp TAB    &kp Q                   &kp W                 &kp E              &kp R                &kp T          &kp Y        &kp U                 &kp I              &kp O                  &kp P                       &long_press LC(BSPC) BACKSPACE
-&kp LCTRL  &HR_shift_L LEFT_GUI A  &HR_Mod_L LEFT_ALT S  &HR_Mod_L LCTRL D  &HR_shift_L LSHFT F  &kp G          &kp H        &HR_shift_R RSHIFT J  &HR_Mod_R RCTRL K  &HR_Mod_R RIGHT_ALT L  &HR_shift_R RGUI SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z                   &kp X                 &kp C              &kp V                &kp B          &kp N        &kp M                 &kp COMMA          &kp DOT                &kp FSLH                    &kp ESC
-                                                         &kp LALT           &lt 2 BACKSPACE      &lt 2 ENTER    &lt 1 SPACE  &lt 1 ENTER           &rgb_ug RGB_TOG
+&kp TAB    &kp Q                   &kp W                 &kp E              &kp R                &kp T             &kp Y        &kp U                 &kp I              &kp O                  &kp P                       &long_press LC(BSPC) BACKSPACE
+&kp LCTRL  &HR_shift_L LEFT_GUI A  &HR_Mod_L LEFT_ALT S  &HR_Mod_L LCTRL D  &HR_shift_L LSHFT F  &kp G             &kp H        &HR_shift_R RSHIFT J  &HR_Mod_R RCTRL K  &HR_Mod_R RIGHT_ALT L  &HR_shift_R RGUI SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z                   &kp X                 &kp C              &kp V                &kp B             &kp N        &kp M                 &kp COMMA          &kp DOT                &kp FSLH                    &kp ESC
+                                                         &lt 3 LEFT_ALT     &lt 2 BACKSPACE      &kp LEFT_SHIFT    &lt 1 ENTER  &lt 1 SPACE           &kp COLON
             >;
         };
 
@@ -108,7 +107,7 @@
 &kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6     &kp N7    &kp N8    &kp N9     &kp N0     &kp BSPC
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT  &kp SLASH  &trans
 &kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans     &trans    &trans    &trans     &trans     &trans
-                                        &kp LEFT_ALT  &mo 3         &kp ENTER       &kp SPACE  &trans    &kp RALT
+                                        &trans        &mo 3         &kp ENTER       &kp ENTER  &trans    &kp RALT
             >;
         };
 
@@ -131,10 +130,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &bootloader    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans         &trans  &trans  &trans
+&trans  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)  &kp LA(N5)    &kp LA(NUMBER_6)  &kp LA(NUMBER_7)  &kp LA(N8)  &kp LA(N9)  &kp LA(N0)  &trans
+&trans  &trans            &trans            &trans            &trans            &trans        &trans            &trans            &trans      &trans      &trans      &trans
+&trans  &trans            &trans            &trans            &trans            &trans        &trans            &trans            &trans      &trans      &trans      &bootloader
+                                            &trans            &trans            &trans        &trans            &trans            &trans
             >;
         };
     };
