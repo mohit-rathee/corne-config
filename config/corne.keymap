@@ -45,7 +45,7 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             hold-while-undecided;
             hold-trigger-on-release;
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
@@ -58,7 +58,7 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             hold-while-undecided;
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
@@ -87,10 +87,10 @@
             //                    | ALT | LWR | SPC |   | ENT | RSE  | BKSP|
 
             bindings = <
-&kp TAB    &kp Q                   &kp W                 &kp E              &kp R                &kp T             &kp Y        &kp U                 &kp I              &kp O                  &kp P                       &long_press LC(BSPC) BACKSPACE
-&kp LCTRL  &HR_shift_L LEFT_GUI A  &HR_Mod_L LEFT_ALT S  &HR_Mod_L LCTRL D  &HR_shift_L LSHFT F  &kp G             &kp H        &HR_shift_R RSHIFT J  &HR_Mod_R RCTRL K  &HR_Mod_R RIGHT_ALT L  &HR_shift_R RGUI SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z                   &kp X                 &kp C              &kp V                &kp B             &kp N        &kp M                 &kp COMMA          &kp DOT                &kp FSLH                    &kp ESC
-                                                         &lt 3 LEFT_ALT     &lt 2 BACKSPACE      &kp LEFT_SHIFT    &lt 1 ENTER  &lt 1 SPACE           &kp COLON
+&kp TAB    &kp Q                 &kp W                 &kp E              &kp R                &kp T             &kp Y        &kp U                 &kp I              &kp O                  &kp P                     &long_press LC(BSPC) BACKSPACE
+&kp LCTRL  &HR_Mod_L LEFT_GUI A  &HR_Mod_L LEFT_ALT S  &HR_Mod_L LCTRL D  &HR_shift_L LSHFT F  &kp G             &kp H        &HR_shift_R RSHIFT J  &HR_Mod_R RCTRL K  &HR_Mod_R RIGHT_ALT L  &HR_Mod_R RGUI SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z                 &kp X                 &kp C              &kp V                &kp B             &kp N        &kp M                 &kp COMMA          &kp DOT                &kp FSLH                  &kp ESC
+                                                       &lt 3 LEFT_ALT     &lt 2 BACKSPACE      &kp LEFT_SHIFT    &lt 1 ENTER  &lt 1 SPACE           &kp COLON
             >;
         };
 
