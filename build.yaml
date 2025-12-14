@@ -1,0 +1,26 @@
+---
+include:
+  # Corne left with OLED
+  - board: nice_nano_v2
+    shield: corne_left nice_oled
+    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_OLED\"
+    artifact-name: corne_left_oled
+    snippet: studio-rpc-usb-uart
+
+  # Corne right with OLED
+  - board: nice_nano_v2
+    shield: corne_right nice_oled
+    artifact-name: corne_right_oled
+
+  # (Optional) RGB variant – keep only if you want RGB config baked in
+  # - board: nice_nano_v2
+  #   shield: corne_left nice_oled
+  #   cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_OLED_RGB\"
+  #   artifact-name: corne_left_oled_rgb
+  #   snippet: rgb-config studio-rpc-usb-uart
+
+  # (Optional but very handy) settings reset image
+  - board: nice_nano_v2
+    shield: settings_reset
+    artifact-name: corne_settings_reset
+
